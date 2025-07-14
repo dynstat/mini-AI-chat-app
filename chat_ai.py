@@ -60,7 +60,7 @@ def getairesponse(input_by_user: str, model_name: str = "gemini-2.0-flash", max_
     # chain = model | resp_parser
     # res = chain.invoke(prompt)
     model_response = model.invoke(prompt)
-    print(model_response.content, f"\n\n\n length: {len(model_response.content)}")
+    # print(model_response.content, f"\n\n\n length: {len(model_response.content)}")
         
         
     try:
