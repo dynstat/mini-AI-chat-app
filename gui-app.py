@@ -22,5 +22,18 @@ class Api:
 api = Api()
 
 if __name__ == '__main__':
-    webview.create_window('ChatGPT GUI', 'index.html', js_api=api, width=500, height=700)
+    window = webview.create_window(
+        'AI Chat Assistant', 
+        'index.html', 
+        js_api=api, 
+        width=1000, 
+        height=900,
+        min_size=(600, 500),
+        # Enable text selection and context menu
+        text_select=True,
+        # Allow right-click context menu for copy/paste
+        # Note: this may not work in all webview implementations
+    )
+    
+    # Start with debug mode to check for any issues
     webview.start()
