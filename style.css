@@ -1,0 +1,146 @@
+body { 
+    font-family: Arial, sans-serif; 
+    margin: 0; 
+    background: #1a1a1a; 
+    color: #e0e0e0; 
+}
+
+#chat { 
+    height: 80vh; 
+    overflow-y: auto; 
+    padding: 20px; 
+    background: #2d2d2d; 
+    border-bottom: 1px solid #444; 
+}
+
+.msg { 
+    margin-bottom: 16px; 
+}
+
+.user { 
+    color: #e0e0e0; 
+}
+
+.bot { 
+    color: #4a9eff; 
+}
+
+.markdown { 
+    font-size: 15px; 
+    line-height: 1.6; 
+    color: #e0e0e0;
+}
+
+.markdown pre { 
+    background: #1e1e1e; 
+    padding: 8px; 
+    border-radius: 4px; 
+    overflow-x: auto; 
+    border: 1px solid #444;
+    color: #e0e0e0;
+}
+
+.markdown code { 
+    background: #3a3a3a; 
+    padding: 2px 4px; 
+    border-radius: 3px; 
+    font-family: 'Fira Mono', 'Consolas', monospace; 
+    color: #ff6b6b;
+}
+
+.markdown blockquote { 
+    border-left: 4px solid #4a9eff; 
+    padding-left: 10px; 
+    color: #b0b0b0; 
+    margin: 8px 0; 
+    background: #2a2a2a;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.markdown h1, .markdown h2, .markdown h3, .markdown h4, .markdown h5, .markdown h6 {
+    color: #ffffff;
+}
+
+.markdown a {
+    color: #4a9eff;
+    text-decoration: none;
+}
+
+.markdown a:hover {
+    text-decoration: underline;
+}
+
+.markdown strong {
+    color: #ffffff;
+}
+
+.markdown em {
+    color: #b0b0b0;
+}
+
+#input-area { 
+    display: flex; 
+    padding: 20px; 
+    background: #1e1e1e; 
+    border-top: 1px solid #444;
+}
+
+#message { 
+    flex: 1; 
+    padding: 10px; 
+    font-size: 16px; 
+    border: 1px solid #555; 
+    border-radius: 4px; 
+    background: #2d2d2d;
+    color: #e0e0e0;
+}
+
+#message::placeholder {
+    color: #888;
+}
+
+#message:focus {
+    outline: none;
+    border-color: #4a9eff;
+    box-shadow: 0 0 0 2px rgba(74, 158, 255, 0.2);
+}
+
+#send { 
+    padding: 10px 20px; 
+    font-size: 16px; 
+    margin-left: 10px; 
+    background: #4a9eff; 
+    color: #fff; 
+    border: none; 
+    border-radius: 4px; 
+    cursor: pointer; 
+    transition: background 0.2s;
+}
+
+#send:hover {
+    background: #3a8eef;
+}
+
+#send:disabled { 
+    background: #555; 
+    cursor: not-allowed;
+}
+
+/* Custom scrollbar for webkit browsers */
+#chat::-webkit-scrollbar {
+    width: 8px;
+}
+
+#chat::-webkit-scrollbar-track {
+    background: #1e1e1e;
+}
+
+#chat::-webkit-scrollbar-thumb {
+    background: #555;
+    border-radius: 4px;
+}
+
+#chat::-webkit-scrollbar-thumb:hover {
+    background: #666;
+}
