@@ -6,15 +6,15 @@ class Api:
         self.history = []
 
     def send_message(self, message):
-        print(f"Received message: {message}")
+        # print(f"Received message: {message}")
         response = getairesponse(message)
-        print(f"AI response: {response}")
+        # print(f"AI response: {response}")
         
         if not response:
             response = {"response": "No response from AI", "status": 1}
         
         response_text = response['response']
-        print(f"Returning response: {response_text}")
+        # print(f"Returning response: {response_text}")
         
         self.history.append({"user": message, "bot": response_text})
         return response_text
