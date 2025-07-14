@@ -148,14 +148,9 @@ messageInput.addEventListener('keydown', function(e) {
     }
 });
 
-// Focus management
-messageInput.addEventListener('blur', function() {
-    setTimeout(() => messageInput.focus(), 100);
-});
-
 // Initialize
 document.addEventListener('DOMContentLoaded', function() {
-    messageInput.focus();
+    messageInput.focus(); // Focus once when page loads
     
     // Add welcome message
     setTimeout(() => {

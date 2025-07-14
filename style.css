@@ -39,6 +39,8 @@ body {
     line-height: 1.6;
     overflow: hidden;
     position: relative;
+    user-select: text;
+    -webkit-user-select: text;
 }
 
 /* Animated background gradient */
@@ -187,6 +189,8 @@ body::after {
     position: relative;
     backdrop-filter: blur(10px);
     transition: all 0.3s ease;
+    user-select: text;
+    -webkit-user-select: text;
 }
 
 .message-content:hover {
@@ -210,6 +214,8 @@ body::after {
     font-size: 0.95rem;
     line-height: 1.7;
     color: inherit;
+    user-select: text;
+    -webkit-user-select: text;
 }
 
 .markdown p {
