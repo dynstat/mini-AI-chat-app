@@ -3,6 +3,11 @@
 A simple desktop GUI chat application powered by Google Gemini via LangChain.  
 Send messages and receive AI-generated responses in a user-friendly interface.
 
+## Screenshot
+<img width="1917" height="1002" alt="image" src="https://github.com/user-attachments/assets/bf2a7ae1-b5e7-49cd-ab19-f45989725e95" />
+
+
+
 ## Features
 
 - Chat with Gemini AI (Google Generative Language)
